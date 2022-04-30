@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.card{
+    position: relative;
+    width: 300px;
+    height: 190px;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.card:hover{
+    width: 350px;
+    height: 450px;
+}
+.card:hover .profile{
+    width: 250px;
+    height: 250px;
+}
+.card .profile{
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;  
+    overflow: hidden;
+    transition: 0.5s;
+
+}
+.card .profile img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+
+}
+.card .content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+
+
+}
+.card:hover .content .detail{
+    transform: translateY(0);
+
+}
+.card .content .detail {
+    text-align: center;
+    padding: 40px;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(135px);
+
+}
+.card .content .detail h2{
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #555;
+    line-height: 1.2em;
+}
+.card .content .detail h2 span{
+    font-size: 0.75em;
+    font-weight: 500;
+    opacity: 0.5;
+    
+}
+.card .content .detail .data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 10px;
+}
+.card .content .detail .data h3{
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #555;
+    line-height: 1.1em;
+}
+.card .content .detail .data span{
+    font-size: 0.75em;
+    font-weight: 400;
+    color: #555;
+    line-height: 0.70em;
+    opacity: 0.7;
+}
+.card .content .detail .actionBtn{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 10px;
+
+}
+
+.card .content .detail .actionBtn button{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: #079992;
+    color: #fff;
+}
+.card .content .detail .actionBtn button:nth-child(2){
+    background-color: #fff;
+    color: #079992;;
+    border:1px solid #999
+}
